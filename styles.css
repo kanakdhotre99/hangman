@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+*,
+*::before,
+*::after{box-sizing: border-box;}
+
+body{
+    background-color: #FEFBE9;
+    margin: 0% 20%;
+}
+
+button {
+    outline: transparent;
+    border: 2px solid #183A1D;
+    box-shadow: 3px 4px 0px 1px #183A1D;
+    border-radius: 4px;
+    background-color: white;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    height: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    width: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+}
+
+button:hover:enabled{
+  box-shadow: 1px 2px 0px 0px #183A1D;
+  transform: translateY(4px);
+}
+
+button:active:enabled{
+    box-shadow: 1px 2px 0px 0px #183A1D;
+    transform: translateY(5px);
+  }
+
+.button-wrong{
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.button-right{
+    background-color: #ffe66d;
+    color: #183A1D;
+}
+
+h1{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+#quote-holder{
+    border-radius: 0.5rem;
+    background-color: #E1EEDD;
+    padding: 2rem;
+}
+
+#keyboard{
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 681px){
+ div{
+    content-visibility: hidden;
+ }
+ #warning{
+    display: block !important;
+ }
+}
